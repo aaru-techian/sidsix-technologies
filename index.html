@@ -26,10 +26,17 @@
             justify-content: center;
             margin-bottom: 1rem;
         }
-        .logo img {
-            height: 60px;
-            margin-right: 10px;
-            filter: brightness(500%) drop-shadow(2px 2px 4px white);        }
+       .logo img {
+  height: 80px; /* or adjust as needed */
+  margin-right: 15px;
+  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
         header h1 {
             margin: 0;
             font-size: 2.75rem;

@@ -1,154 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIDSIX Technologies</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #1e1e2f;
-            color: #fff;
-            text-align: center;
-            padding: 3rem 1rem;
-            border-radius: 0 0 12px 12px;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1rem;
-        }
-       .logo img {
-  height: 80px; /* or adjust as needed */
-  margin-right: 15px;
-  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
-  transition: transform 0.3s ease;
-}
-
-.logo img:hover {
-  transform: scale(1.05);
-}
-
-        header h1 {
-            margin: 0;
-            font-size: 2.75rem;
-            letter-spacing: 1px;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 1rem;
-            color: #cccccc;
-        }
-        section {
-            padding: 3rem 2rem;
-            max-width: 900px;
-            margin: auto;
-        }
-        h2 {
-            color: #1e1e2f;
-            font-size: 1.75rem;
-        }
-        .cards {
-            display: grid;
-            gap: 2rem;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            padding: 1.5rem;
-            transition: transform 0.2s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .footer {
-            background: #eee;
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.9rem;
-            color: #666;
-        }
-        a {
-            color: #007acc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIDSIX Technologies</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="SIDSIX Logo">
-        </div>
-        <h1>SIDSIX Technologies</h1>
-        <p>Empowering the next generation for an AI-driven world.</p>
-    </header>
-
-    <section>
-        <h2>About Us</h2>
-        <p>SIDSIX is a non-profit, open-source platform committed to empowering human minds with the skills needed to thrive in an AI-driven world. What began as a simple idea to create meaningful educational tools has evolved into a collaborative hub where developers, educators, and innovators unite to build engaging apps that ignite curiosity, foster critical thinking, and prepare the next generation to meet the challenges of tomorrow.</p>
-    </section>
-
-    <section>
-        <h2>Join Our Mission</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Collaborate with Us</h3>
-                <p>We're inviting educators, developers, designers, and dreamers to contribute ideas and co-create meaningful learning tools.</p>
-            </div>
-            <div class="card">
-                <h3>Freelancer Opportunities</h3>
-                <p>Are you a freelance developer? Join us to contribute part-time on impactful open-source projects focused on children’s education and future-ready skills.</p>
-            </div>
-            <div class="card">
-                <h3>Internships</h3>
-                <p>College students are welcome to intern with us. Gain hands-on experience, collaborate with a purpose-driven team, and build a portfolio while making a real impact.</p>
-            </div>
-            <div class="card">
-                <h3>Inplant Training</h3>
-                <p>We offer structured inplant training programs for engineering and IT students. Learn real-world tools and practices by working on live educational app development projects.</p>
-            </div>
-            <div class="card">
-                <h3>Project Works</h3>
-                <p>Final-year students can collaborate with SIDSIX to complete academic project work that goes beyond theory — applying skills to build open-source tools that shape future learning.</p>
-            </div>
-            <div class="card">
-                <h3>On-Demand Training Services</h3>
-                <p>Need a custom training module on emerging tech, app development, or AI fundamentals? We provide flexible, on-demand training sessions tailored for institutions and individuals.</p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Our Apps on Play Store</h2>
-        <ul>
-            <li><a href="#">SkillSpark – Math & Memory Booster</a></li>
-            <li><a href="#">CodeKid – Logic & Programming Primer</a></li>
-            <li><a href="#">BrainBlox – Critical Thinking Puzzles</a></li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:saro@sidsix.com">saro@sidsix.com</a><br>
-           Address: 1264-B, 9th Street, Golden Colony, Mogappair, Chennai – 600050</p>
-        <p><a href="https://www.google.com/maps?q=1264-B,+9th+Street,+Golden+Colony,+Mogappair+-+600050" target="_blank">View on Google Maps</a></p>
-    </section>
-
-    <div class="footer">
-        &copy; 2025 SIDSIX Technologies. Open Source. Non-Profit. Powered by Passion.
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="SIDSIX Logo" />
     </div>
+    <h1>SIDSIX Technologies</h1>
+    <p class="tagline">Empowering the next generation for an AI-driven world.</p>
+  </header>
+
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#join">Join</a>
+    <a href="#apps">Apps</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      SIDSIX is a non-profit, open-source platform committed to empowering human minds with the skills needed to thrive in an AI-driven world. What began as a simple idea to create meaningful educational tools has evolved into a collaborative hub where developers, educators, and innovators unite to build engaging apps that ignite curiosity, foster critical thinking, and prepare the next generation to meet the challenges of tomorrow. </p>
+  </section>
+
+  <section id="join">
+    <h2>Join Our Mission</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Collaborate with Us</h3>
+        <p>We're inviting educators, developers, designers, and dreamers to contribute ideas and co-create meaningful learning tools.</p>
+      </div>
+      <div class="card">
+        <h3>Freelancer Opportunities</h3>
+        <p>Are you a freelance developer? Join us to contribute part-time on impactful open-source projects focused on children’s education and future-ready skills.</p>
+      </div>
+      <div class="card">
+        <h3>Internships</h3>
+        <p>College students are welcome to intern with us. Gain hands-on experience, collaborate with a purpose-driven team, and build a portfolio while making a real impact.</p>
+      </div>
+      <div class="card">
+        <h3>Inplant Training</h3>
+        <p>We offer structured inplant training programs for engineering and IT students. Learn real-world tools and practices by working on live educational app development projects.</p>
+      </div>
+      <div class="card">
+        <h3>Project Work</h3>
+        <p>Final-year students can collaborate with SIDSIX to complete academic project work that goes beyond theory — applying skills to build open-source tools that shape future learning.</p>
+      </div>
+      <div class="card">
+        <h3>On-Demand Training</h3>
+        <p>Need a custom training module on emerging tech, app development, or AI fundamentals? We provide flexible, on-demand training sessions tailored for institutions and individuals.</p>
+      </div>
+    </div>
+
+    <h3>Get Involved</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="How would you like to contribute?" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="apps">
+    <h2>Our Apps (Coming Soon)</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>SkillSpark</h3>
+        <p>Math & memory training games for young minds.</p>
+      </div>
+      <div class="card">
+        <h3>CodeKid</h3>
+        <p>Intro to logic and programming using fun challenges.</p>
+      </div>
+      <div class="card">
+        <h3>BrainBlox</h3>
+        <p>Puzzles to develop critical thinking and strategy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+  <h2>Contact Us</h2>
+
+  <h3>Corporate Office – Chennai</h3>
+  <p>
+    SIDSIX Technologies, Chennai<br>
+    Address: 1264-B, 9th Street, Golden Colony, Mogappair, Chennai – 600050<br>
+    Email: <a href="mailto:saro@sidsix.com">saro@sidsix.com</a><br>
+    <a href="https://www.google.com/maps?q=1264-B,+9th+Street,+Golden+Colony,+Mogappair,+Chennai+-+600050" target="_blank">View on Google Maps</a>
+  </p>
+
+  <h3>Branch Office – Bangalore</h3>
+  <p>
+    SIDSIX Technologies, Bangalore<br>
+    Address: 32, 14th Cross, 22nd Main Rd, Chikkalasandra, Bengaluru, Karnataka 560061<br>
+    Email: <a href="mailto:support@sidsix.com">support@sidsix.com</a><br>
+    <a href="https://www.google.com/maps/place/B+R+AUTOMOTIVE/@12.9180479,77.5493188,706m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bae3fd2ecd5554d:0x70d4c212d9e358fd!8m2!3d12.9180427!4d77.5518937" target="_blank">View on Google Maps</a>
+  </p>
+</section>
+
+
+    
+
+  <footer class="footer">
+    &copy; 2025 SIDSIX Technologies. Open Source. Non-Profit. Powered by Passion.
+  </footer>
 </body>
 </html>

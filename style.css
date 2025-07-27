@@ -1,44 +1,135 @@
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
+  background-color: #f9f9f9;
   color: #333;
 }
-.hero {
+
+header {
+  background-color: #1e1e2f;
+  color: #fff;
   text-align: center;
-  padding: 2rem;
-  background: #20232a;
-  color: white;
-}
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    background-color: #1e1e2f; /* same as header background */
-    padding: 1rem;
-    border-radius: 12px;
+  padding: 3rem 1rem;
+  border-radius: 0 0 12px 12px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  height: 80px;
+  margin-right: 15px;
+  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s ease;
+}
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.75rem;
+  letter-spacing: 1px;
+}
 
 .tagline {
   font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #cccccc;
 }
-.footer {
-  background: #ddd;
-  padding: 1rem;
+
+nav.nav {
+  background: #fff;
   text-align: center;
-  font-size: 0.9rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
 }
+nav.nav a {
+  color: #1e1e2f;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+}
+nav.nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: clamp(1.5rem, 4vw, 3rem);
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #1e1e2f;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
 form {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  max-width: 400px;
-  margin: auto;
+  gap: 0.75rem;
+  max-width: 500px;
+  margin: 2rem auto 0;
 }
-input, button {
-  padding: 0.5rem;
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #1e1e2f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background-color: #007acc;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
 }

@@ -13,9 +13,16 @@ body {
   color: white;
 }
 .logo {
-  max-height: 80px;
-  margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background-color: #1e1e2f; /* same as header background */
+    padding: 1rem;
+    border-radius: 12px;
 }
+
+
 .tagline {
   font-size: 1.2rem;
 }
